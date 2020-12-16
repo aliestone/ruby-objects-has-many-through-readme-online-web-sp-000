@@ -1,6 +1,6 @@
 class Waiter
-
-  attr_accessor :name, :yrs_experience
+  attr_accessor :years_of_experience
+  attr_reader :name
 
   @@all = []
 
@@ -15,7 +15,7 @@ class Waiter
   end
 
   def new_meal(customer, total, tip=0)
-    Meal.new (customer,self, total, tip)
+    Meal.new (self,customer,total, tip)
   end
 
   def meals
