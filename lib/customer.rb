@@ -33,5 +33,5 @@ class Customer
     tip = total * 0.2
     Meal.new(waiter, self, total, tip)
   end
-
 end
+end 
