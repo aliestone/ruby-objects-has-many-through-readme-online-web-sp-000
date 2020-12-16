@@ -28,6 +28,7 @@ class Customer
     meals.map do |meal|
     Meal.waiter
   end
+end
 
   def new_meal_20_percent(waiter, total)
     tip = total * 0.2
@@ -45,5 +46,4 @@ class Customer
     end
     oldest_customer
   end
-
 end
