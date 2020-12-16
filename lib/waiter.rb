@@ -8,7 +8,6 @@ class Waiter
     @@all
   end
 
-
   def new (name, yrs_experience)
     @name = name
     @yrs_experience = yrs_experience
@@ -21,7 +20,7 @@ class Waiter
 
  def meals
    Meal.all.select do |meal|
-   meal.waiter == self
+   Meal.waiter == self
    end
  end
 
