@@ -21,7 +21,7 @@ class Customer
 
   def waiters
     meals.map do |meal|
-      meal.waiter
+    meal.waiter
   end
 
 
@@ -34,4 +34,4 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
 end
-end 
+end
