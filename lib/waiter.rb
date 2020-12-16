@@ -4,9 +4,14 @@ class Waiter
 
   @@all = []
 
+  def self.all
+    @@all
+  end 
+
+
   def new (name, yrs_experience)
     @name = name
-    @yrs_experience = years
+    @yrs_experience = yrs_experience
     @@all << self
   end
 
