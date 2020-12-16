@@ -6,7 +6,7 @@ class Waiter
 
   def self.all
     @@all
-  end 
+  end
 
 
   def new (name, yrs_experience)
